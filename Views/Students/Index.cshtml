@@ -4,27 +4,43 @@
     <h1>Students</h1>
 </div>
 
-<div>
-    <table>
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Faculty</th>
-                <th>Email</th>
-            </tr>
-        </thead>
-        <tbody>
-            @{
-                foreach (var user in Model)
-                {
-                    <tr>
-                        <td>@s</td>
-                        <td>@user.Name</td>
-                        <td>@user.Email</td>
-                    </tr>
-                }
-            }
-        </tbody>
-    </table>
-</div>
+<body>
+   
+
+    <div class=container>
+        <div class="row">
+
+            <div class="col">
+                <div class="table table-responsive">
+                    <table class="table table-bordered">
+                        <caption><h2>List of students</h2></caption>
+                        <thead style="background-color:brown;">
+                            <tr>
+                                <th>Id</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Faculty</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var nume in Model)
+                            {
+                                <tr>
+                                    <td>@nume.Id</td>
+                                    <td>@nume.Name</td>
+                                    <td>@nume.Email</td>
+                                    <td>@nume.Faculty</td>
+                                    
+                                </tr>
+
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>

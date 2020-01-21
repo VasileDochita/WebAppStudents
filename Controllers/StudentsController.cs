@@ -4,11 +4,11 @@
     using System.Web.Mvc;
     using Models;
 
-    public class UsersController : Controller
+    public class StudentsController : Controller
     {
         private readonly StudentsData userData;
 
-        public UsersController()
+        public StudentsController()
         {
             this.userData = new StudentsData();
         }
