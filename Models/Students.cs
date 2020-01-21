@@ -13,6 +13,7 @@ namespace WebAppStudents.Models
         public string Faculty { get; set; }
         public string Email { get; set; }
 
+
     }
     public class StudentsData
     {
